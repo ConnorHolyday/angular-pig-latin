@@ -1,4 +1,10 @@
-# AngularPigLatin
+# Pig Latin Translator
+
+Trying out the new [angular.io](https://angular.io) and [Angular CLI](https://github.com/angular/angular-cli) alongside Typescript.
+
+As per Wikipedia's article on Pig Latin [https://en.wikipedia.org/wiki/Pig_Latin]()
+1. For words that begin with consonants, all letters before the initial vowel are placed at the end of the word sequence. Then, "ay". E.g. "pig" -> "igpay"
+2. For words that begin with vowel sounds, one just adds "way" to the end. E.g. "eat" -> "eatway"
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.
 
