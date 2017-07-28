@@ -17,7 +17,7 @@ class Translation {
 })
 export class AppComponent {
   translatedSentence: string = 'Translate me';
-  userInput: string;
+  userInput: string = '';
   vowels = ['a', 'e', 'i', 'o', 'u'];
   translatedHistory: Translation[] = [];
 

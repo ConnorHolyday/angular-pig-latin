@@ -57,6 +57,11 @@ input {
   background: lightsalmon;
 }
 
+[type="submit"]:hover:disabled {
+  background: tomato;
+  cursor: not-allowed;
+}
+
 input:focus {
 	border-color: tomato;
 	color: #444;

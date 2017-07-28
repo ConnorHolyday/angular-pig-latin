@@ -4,7 +4,7 @@
     <h1>{{translatedSentence}}</h1>
     <form (submit)="translate(box.value)">
       <input #box [(ngModel)]="userInput" placeholder="When pigs fly" autofocus [ngModelOptions]="{standalone: true}">
-      <input type="submit" value="Translate &uarr;" />
+      <input type="submit" [disabled]="!userInput.length" value="Translate &uarr;" />
     </form>
   </section>
 
@@ -12,7 +12,7 @@
     <h2>History</h2>
     <p>A record of the last 10 translations.</p>
     <ul *ngIf="translatedHistory.length">
-      <li *ngFor="let sentence of translatedHistory.reverse()">
+      <li *ngFor="let sentence of translatedHistory.reverse(); let i = index; trackBy:index">
         <span>{{sentence.original}} <i class="arrow">&rarr;</i> </span>
         <span>{{sentence.translation}}</span>
       </li>
