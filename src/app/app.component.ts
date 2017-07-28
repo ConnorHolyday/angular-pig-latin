@@ -31,6 +31,8 @@ export class AppComponent {
       return;
     }
 
+    input = input.toLowerCase();
+
     // prepares an array to handle the translation process
     const translatedWords: string[] = [];
 

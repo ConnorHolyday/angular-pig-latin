@@ -12,7 +12,7 @@
     <h2>History</h2>
     <p>A record of the last 10 translations.</p>
     <ul *ngIf="translatedHistory.length">
-      <li *ngFor="let sentence of translatedHistory.reverse(); let i = index; trackBy:index">
+      <li *ngFor="let sentence of translatedHistory.slice().reverse(); let i = index; trackBy:index">
         <span>{{sentence.original}} <i class="arrow">&rarr;</i> </span>
         <span>{{sentence.translation}}</span>
       </li>
